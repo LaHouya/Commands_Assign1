@@ -1,0 +1,22 @@
+mkdir test
+cd test
+touch index.html
+touch styles.css
+touch command.txt
+ls -a (to check to see what files are inside the current directory)
+cp index.html index_2.html
+cd .. (to go back to the parent directory)
+mkdir destination
+cd .. (to go back to the parent directory)
+cd test (to switch back to the test directory)
+mv index_2.html ../destination
+cd .. (to go back to the parent directory)
+cd destination
+ls -a (to check to see what files are inside the current directory)
+cd .. (to go back to the parent directory)
+cd test
+rm styles.css
+ls -a (to check to see what files are inside the current directory)
+cd .. (to go back to the parent directory)
+rm -rf destination
+cd destination (should get an error messages stating no such file or directory)
